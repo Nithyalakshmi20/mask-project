@@ -6,7 +6,6 @@ model = load_model("model/mask_detector.h5")
 labels = ["Correct Mask", "Incorrect Mask", "No Mask", "Cloth Mask"]
 
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
-
 cap = cv2.VideoCapture(0)
 
 while True:
